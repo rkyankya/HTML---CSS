@@ -1,6 +1,10 @@
 /* CSS For Sign in Page  
  Begining */
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .navbar {
   margin-top: 4px;
   border: 0;
@@ -37,6 +41,11 @@
   .h-custom {
     height: 100%;
   }
+}
+
+.login {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem
 }
 
 /* End  */

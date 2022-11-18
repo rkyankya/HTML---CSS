@@ -62,7 +62,7 @@
     <!-- Navbar Component  -->
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src="images/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
           Logo
         </a>
@@ -73,10 +73,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Enter Data</a>
+              <a class="nav-link" href="/enter_data.html">Enter Data</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Manage Data</a>
@@ -92,6 +92,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Admin</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/signin.html">Sign In</a>
             </li>
           </ul>
           <form class="search d-flex" role="search">
@@ -109,44 +112,59 @@
     <div class="container" id="form">
       <div class="bg-light p-5 rounded">
         <!-- Enter Data Form  -->
+
+        <!-- No Data Validation  -->
         <form>
           <!-- 2 column grid layout with text inputs for the first and last names -->
           <h1>Enter Data</h1>
-          <h2>Section A</h2>
+          <h3>Form With No Data Validation</h3>
           <div class="row mb-4">
             <div class="col">
               <div class="form-outline">
-                <input type="text" id="form3Example1" class="form-control" />
-                <label class="form-label" for="form3Example1">First name</label>
+                <input type="text" id="firstname" class="form-control" />
+                <label class="form-label" for="firstname">First name</label>
               </div>
             </div>
             <div class="col">
               <div class="form-outline">
-                <input type="text" id="form3Example2" class="form-control" />
-                <label class="form-label" for="form3Example2">Last name</label>
+                <input type="text" id="lastname" class="form-control" />
+                <label class="form-label" for="lastname">Last name</label>
               </div>
             </div>
           </div>
 
           <!-- Email input -->
           <div class="form-outline mb-4">
-            <input type="email" id="form3Example3" class="form-control" />
-            <label class="form-label" for="form3Example3">Email address</label>
+            <input type="email" id="email" class="form-control" />
+            <label class="form-label" for="email">Email address</label>
           </div>
 
           <!-- Password input -->
           <div class="form-outline mb-4">
-            <input type="password" id="form3Example4" class="form-control" />
-            <label class="form-label" for="form3Example4">Password</label>
+            <input type="password" id="password" class="form-control" />
+            <label class="form-label" for="password">Password</label>
+          </div>
+
+          <div class="form-outline mb-4">
+            <label for="exampleDataList" class="form-label">Datalist example</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+            <datalist id="datalistOptions">
+              <option value="San Francisco">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
           </div>
 
           <!-- Checkbox -->
           <div class="form-check d-flex justify-content-center mb-4">
             <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
             <label class="form-check-label" for="form2Example33">
-              Check Box
+              Check Box 1
             </label>
           </div>
+
 
           <!-- Submit button -->
           <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
@@ -156,192 +174,87 @@
 
     <div class="container" id="form">
       <div class="bg-light p-5 rounded">
+
+        <h1>Enter Data</h1>
+        <h3>Form With Data Validation</h3>
         <!-- Enter Data Form  -->
-        <form>
-          <!-- 2 column grid layout with text inputs for the first and last names -->
-          <h1>Enter Data</h1>
-          <h2>Section B</h2>
-          <div class="row mb-4">
-            <div class="col">
-              <div class="form-outline">
-                <input type="text" id="form3Example1" class="form-control" />
-                <label class="form-label" for="form3Example1">First name</label>
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-outline">
-                <input type="text" id="form3Example2" class="form-control" />
-                <label class="form-label" for="form3Example2">Last name</label>
-              </div>
+
+        <!-- Form With Validation of Data  -->
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" value="" placeholder="First Name" required>
+            <div class="valid-feedback">
+              Looks good!
             </div>
           </div>
-
-          <!-- Email input -->
-          <div class="form-outline mb-4">
-            <input type="email" id="form3Example3" class="form-control" />
-            <label class="form-label" for="form3Example3">Email address</label>
-          </div>
-
-          <!-- Password input -->
-          <div class="form-outline mb-4">
-            <input type="password" id="form3Example4" class="form-control" />
-            <label class="form-label" for="form3Example4">Password</label>
-          </div>
-
-          <!-- Checkbox -->
-          <div class="form-check d-flex justify-content-center mb-4">
-            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-            <label class="form-check-label" for="form2Example33">
-              Check Box
-            </label>
-          </div>
-
-          <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="container" id="form">
-      <div class="bg-light p-5 rounded">
-        <!-- Enter Data Form  -->
-        <form>
-          <!-- 2 column grid layout with text inputs for the first and last names -->
-          <h1>Enter Data</h1>
-          <h2>Section C</h2>
-          <div class="row mb-4">
-            <div class="col">
-              <div class="form-outline">
-                <input type="text" id="form3Example1" class="form-control" />
-                <label class="form-label" for="form3Example1">First name</label>
-              </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" value="" placeholder="Last Name" required>
+            <div class="valid-feedback">
+              Looks good!
             </div>
-            <div class="col">
-              <div class="form-outline">
-                <input type="text" id="form3Example2" class="form-control" />
-                <label class="form-label" for="form3Example2">Last name</label>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+                placeholder="Username" required>
+              <div class="invalid-feedback">
+                Please choose a username.
               </div>
             </div>
           </div>
-
-          <!-- Email input -->
-          <div class="form-outline mb-4">
-            <input type="email" id="form3Example3" class="form-control" />
-            <label class="form-label" for="form3Example3">Email address</label>
-          </div>
-
-          <!-- Password input -->
-          <div class="form-outline mb-4">
-            <input type="password" id="form3Example4" class="form-control" />
-            <label class="form-label" for="form3Example4">Password</label>
-          </div>
-
-          <!-- Checkbox -->
-          <div class="form-check d-flex justify-content-center mb-4">
-            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-            <label class="form-check-label" for="form2Example33">
-              Check Box
-            </label>
-          </div>
-
-          <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="container" id="form">
-      <div class="bg-light p-5 rounded">
-        <!-- Enter Data Form  -->
-        <form>
-          <!-- 2 column grid layout with text inputs for the first and last names -->
-          <h1>Enter Data</h1>
-          <h2>Section D</h2>
-          <div class="row mb-4">
-            <div class="col">
-              <div class="form-outline">
-                <input type="text" id="form3Example1" class="form-control" />
-                <label class="form-label" for="form3Example1">First name</label>
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-outline">
-                <input type="text" id="form3Example2" class="form-control" />
-                <label class="form-label" for="form3Example2">Last name</label>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Upload File</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">Choose File</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+                placeholder="File" required>
+              <div class="invalid-feedback">
+                Upload a PDF or Word Document
               </div>
             </div>
           </div>
-
-          <!-- Email input -->
-          <div class="form-outline mb-4">
-            <input type="email" id="form3Example3" class="form-control" />
-            <label class="form-label" for="form3Example3">Email address</label>
-          </div>
-
-          <!-- Password input -->
-          <div class="form-outline mb-4">
-            <input type="password" id="form3Example4" class="form-control" />
-            <label class="form-label" for="form3Example4">Password</label>
-          </div>
-
-          <!-- Checkbox -->
-          <div class="form-check d-flex justify-content-center mb-4">
-            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-            <label class="form-check-label" for="form2Example33">
-              Check Box
-            </label>
-          </div>
-
-          <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="container" id="form">
-      <div class="bg-light p-5 rounded">
-        <!-- Enter Data Form  -->
-        <form>
-          <!-- 2 column grid layout with text inputs for the first and last names -->
-          <h1>Enter Data</h1>
-          <h2>Section E</h2>
-          <div class="row mb-4">
-            <div class="col">
-              <div class="form-outline">
-                <input type="text" id="form3Example1" class="form-control" />
-                <label class="form-label" for="form3Example1">First name</label>
-              </div>
+          <div class="col-md-3">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
             </div>
-            <div class="col">
-              <div class="form-outline">
-                <input type="text" id="form3Example2" class="form-control" />
-                <label class="form-label" for="form3Example2">Last name</label>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-2">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
               </div>
             </div>
           </div>
-
-          <!-- Email input -->
-          <div class="form-outline mb-4">
-            <input type="email" id="form3Example3" class="form-control" />
-            <label class="form-label" for="form3Example3">Email address</label>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
           </div>
-
-          <!-- Password input -->
-          <div class="form-outline mb-4">
-            <input type="password" id="form3Example4" class="form-control" />
-            <label class="form-label" for="form3Example4">Password</label>
-          </div>
-
-          <!-- Checkbox -->
-          <div class="form-check d-flex justify-content-center mb-4">
-            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-            <label class="form-check-label" for="form2Example33">
-              Check Box
-            </label>
-          </div>
-
-          <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
         </form>
       </div>
     </div>
@@ -383,6 +296,28 @@
     <!-- End of Footer Section   -->
 
   </main>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
 </body>
 
 </html>
