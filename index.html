@@ -1,216 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign In Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
-  </script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS  -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+  <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="../dist/css/style.min.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+  <title>Hello, world!</title>
 </head>
 
 <body>
-  <header>
-    <!-- Top Content  -->
-    <div class="bg-top navbar-light">
-      <div class="container">
-        <div class="row no-gutters d-flex align-items-center align-items-stretch">
-          <div class="col-md-4 d-flex align-items-center py-4">
-            <a class="navbar-brand" href="index.html">
-              <img src="/images/bootstrap-logo.svg" height="30" width="36" alt="RMFA" width="100" />
-            </a>
-          </div>
-          <div class="col-lg-8 d-block">
-            <div class="row d-flex">
-              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-                <div class="icon d-flex justify-content-center align-items-center"></div>
-                <div class="text">
-                  <span>Email:</span>
-                  <span>Company Email</span>
-                </div>
-              </div>
-              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-                <div class="icon d-flex justify-content-center align-items-center"></div>
-                <div class="text">
-                  <span>Contact:</span>
-                  <span>Company Contact</span>
-                </div>
-              </div>
-              <div class="col-md topper d-flex align-items-center justify-content-end">
-                <p class="mb-0 d-block">
-                  <a href="/" class="btn py-2 px-3 btn-outline-danger">
-                    <span>Sign Out</span>
-                  </a>
-                </p>
-              </div>
-            </div>
+
+  <div class="container">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="/assets/images/bootstrap-logo.svg" width="36" height="30" alt="Logo"
+          class="d-inline-block align-text-top">
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/home.html" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="dashboard.html" class="nav-link px-2 link-dark">Dashboard</a></li>
+        <li><a href="edit.html" class="nav-link px-2 link-dark">Enter Data</a></li>
+        <li><a href="info.html" class="nav-link px-2 link-dark">Info</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+        <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+      </form>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+        <button type="button" class="btn btn-primary">Sign-up</button>
+      </div>
+    </header>
+
+    <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1">News and Announcements</h1>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor voluptas error neque
+            veniam suscipit cum dolore quidem quam delectus, eos nulla maxime voluptates sint. Nulla excepturi nam
+            temporibus magni.
+            Modi odit porro perferendis eum vel quae. Dolor quasi tempore fugit, culpa officiis alias. A corrupti non
+            incidunt mollitia expedita fuga voluptate nobis eius aspernatur natus, amet id labore voluptatum?
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">About Us</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Version</button>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- End Content  -->
 
-    <!-- Navbar Component  -->
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img src="images/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          Logo
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/enter_data.html">Enter Data</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Manage Data</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">EQA Reports</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Inventory</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Admin</a>
-            </li>
-            <li>
-              <a class="nav-link" href="/signin.html">Sign In</a>
-            </li>
-          </ul>
-          <form class="search d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+            <hr class="my-4">
+            <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
           </form>
         </div>
       </div>
-    </nav>
-    <!-- End NavBar  -->
-  </header>
-
-
-  <main>
-
-    <!-- <h1>Welcome</h1> -->
-    <div class="container px-4 py-5">
-      <h2 class="pb-2 border-bottom">News</h2>
-
-      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-        <div class="d-flex flex-column align-items-start gap-2">
-          <h3 class="fw-bold">News and Announcements</h3>
-          <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with
-            another sentence and probably just keep going until we run out of words.</p>
-          <a href="#" class="btn btn-primary btn-lg">Announcements</a>
-        </div>
-        <div class="row row-cols-1 row-cols-sm-2 g-4">
-          <div class="d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#collection" />
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">App Background</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-            <button type="button" class="btn btn-outline-secondary">Click Here</button>
-          </div>
-
-          <div class="d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#gear-fill" />
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Version</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-            <button type="button" class="btn btn-outline-secondary">Click Here</button>
-          </div>
-
-          <div class="d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#speedometer" />
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">About Us</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
-            <button type="button" class="btn btn-outline-info">Click Here</button>
-          </div>
-
-          <div class="d-flex flex-column gap-2">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-              <svg class="bi" width="1em" height="1em">
-                <use xlink:href="#table" />
-              </svg>
-            </div>
-            <h4 class="fw-semibold mb-0">Sign In Mail</h4>
-            <p class="text-muted">Paragraph of text beneath the heading to explain the heading.
-            </p>
-            <button type="button" class="btn btn-outline-primary">Sign In</button>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <!-- Footer Section  -->
-
-    <footer
-      class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-3 mt-auto px-4 px-xl-5 bg-primary">
+    <footer class="bg-light text-center text-lg-start">
       <!-- Copyright -->
-      <div class="container text-white mb-3 mb-md-0">
-        Copyright © 2020 -
-        <!-- Current Year  -->
+      <div class="text-center p-3">
+        © 2020 -
         <script type="text/javascript">
           document.write(new Date().getFullYear());
         </script>
-        . All rights reserved.
+        <i class="fa fa-copyright" aria-hidden="true"></i>
+        Copyright:
+        <a class="text-dark" href="#">
+          All rights reserved.
+        </a>
       </div>
       <!-- Copyright -->
-
-      <!-- Right -->
-      <!-- <div>
-          <a href="#!" class="text-white me-4">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#!" class="text-white me-4">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#!" class="text-white me-4">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="#!" class="text-white">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div> -->
-      <!-- Right -->
     </footer>
 
+  </div>
 
-    <!-- End of Footer Section   -->
 
-  </main>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- All Jquery -->
+  <!-- ============================================================== -->
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap tether Core JavaScript -->
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../dist/js/app-style-switcher.js"></script>
+  <!--Wave Effects -->
+  <script src="../dist/js/waves.js"></script>
+  <!--Menu sidebar -->
+  <script src="../dist/js/sidebarmenu.js"></script>
+  <!--Custom JavaScript -->
+  <script src="../dist/js/custom.js"></script>
+  <!--This page JavaScript -->
+  <!--chartis chart-->
+  <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+  <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+  <script src="../dist/js/pages/dashboards/dashboard1.js"></script>
 </body>
 
 </html>
