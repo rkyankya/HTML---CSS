@@ -1,0 +1,42 @@
+/* CSS For Sign in Page  
+ Begining */
+
+.navbar {
+  margin-top: 4px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  background-color: #e3f2fd;
+}
+
+#form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #e3f2fd;
+}
+
+.signin {
+  margin-left: 8px;
+}
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.h-custom {
+  height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+/* End  */
